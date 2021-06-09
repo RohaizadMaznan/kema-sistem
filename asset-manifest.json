@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/kema-sistem/static/css/main.d10b35c3.chunk.css",
+    "main.js": "/kema-sistem/static/js/main.11b52c34.chunk.js",
+    "main.js.map": "/kema-sistem/static/js/main.11b52c34.chunk.js.map",
+    "runtime-main.js": "/kema-sistem/static/js/runtime-main.12ca404d.js",
+    "runtime-main.js.map": "/kema-sistem/static/js/runtime-main.12ca404d.js.map",
+    "static/js/2.135d5bd8.chunk.js": "/kema-sistem/static/js/2.135d5bd8.chunk.js",
+    "static/js/2.135d5bd8.chunk.js.map": "/kema-sistem/static/js/2.135d5bd8.chunk.js.map",
+    "index.html": "/kema-sistem/index.html",
+    "static/css/main.d10b35c3.chunk.css.map": "/kema-sistem/static/css/main.d10b35c3.chunk.css.map",
+    "static/js/2.135d5bd8.chunk.js.LICENSE.txt": "/kema-sistem/static/js/2.135d5bd8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.12ca404d.js",
+    "static/js/2.135d5bd8.chunk.js",
+    "static/css/main.d10b35c3.chunk.css",
+    "static/js/main.11b52c34.chunk.js"
+  ]
+}
