@@ -36,7 +36,7 @@ export default function Index() {
 
   return (
     <div>
-      <Meta title="Coupons | Bendahari Dashboard" />
+      <Meta title="Senarai Kupon | Bendahari Dashboard" />
       <div
         className="lg:pl-6 space-y-10 text-gray-900"
         data-aos="fade-up"
@@ -45,7 +45,7 @@ export default function Index() {
         <div>
           <div className="inline-block md:flex md:justify-between">
             <div>
-              <p className="text-2xl">All Coupon(s)</p>
+              <p className="text-2xl">Senarai Kupon</p>
             </div>
             <div className="mr-10">
               <Link
@@ -68,7 +68,7 @@ export default function Index() {
                         d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>{" "}
-                    <span className="ml-2">New coupon</span>
+                    <span className="ml-2">Tambah kupon</span>
                   </div>
                 </span>
               </Link>
@@ -79,12 +79,12 @@ export default function Index() {
             <table className="table-auto border-collapse w-full">
               <thead>
                 <tr className="rounded-lg bg-gray-200 text-sm font-medium text-gray-700">
-                  <th className="w-2/12 px-4 py-2 text-left">Code</th>
-                  <th className="w-2/12 px-4 py-2 text-left">Limit (Max)</th>
-                  <th className="w-2/12 px-4 py-2 text-left">Value</th>
-                  <th className="w-10/12 px-4 py-2 text-left">Description</th>
-                  <th className="w-1/12 px-4 py-2 ">Anonymous</th>
-                  <th className="w-1/12 px-4 py-2 ">Share</th>
+                  <th className="w-2/12 px-4 py-2 text-left">Kod</th>
+                  <th className="w-2/12 px-4 py-2 text-left">Had (Max)</th>
+                  <th className="w-2/12 px-4 py-2 text-left">Kadar Harga</th>
+                  <th className="w-10/12 px-4 py-2 text-left">Deskripsi</th>
+                  <th className="w-1/12 px-4 py-2 ">Aksi</th>
+                  <th className="w-1/12 px-4 py-2 ">Kongsi</th>
                 </tr>
               </thead>
               <tbody className="text-sm font-normal text-gray-700">

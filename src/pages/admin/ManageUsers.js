@@ -35,7 +35,7 @@ export default function MyUpload() {
 
   return (
     <>
-      <Meta title="My Uploads & Handnotes | KitaShare Web Application and OCR" />
+      <Meta title="Senarai Pengguna Sistem | Admin Dashboard" />
       <div
         className="w-full lg:max-h-screen p-5 mt-6 mb-20 lg:mt-0 text-gray-900 leading-normal rounded-md"
         data-aos="fade-up"

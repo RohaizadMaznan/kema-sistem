@@ -8,7 +8,6 @@ import { ToastProvider } from "react-toast-notifications";
 
 // All pages
 import Home from "./pages/Home";
-import AdminDashboard from "./pages/admin/index";
 import ResetPassword from "./pages/Reset";
 import ManageUsers from "./pages/admin/ManageUsers";
 import AdminProfile from "./pages/admin/Profile";

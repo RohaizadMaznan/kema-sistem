@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import fire from "../../auth/fbAuth";
+import Meta from "../../components/Meta";
 // import SenderReceiver from "../../components/bendahari/SenderReceiver";
 // import { Document, Page } from "react-pdf";
 // import Pdf from "react-to-pdf";
@@ -58,13 +59,14 @@ function DownloadTransaction(props) {
   }, []);
 
   const onClickPrint = (e) => {
-      e.preventDefault();
+    e.preventDefault();
 
-      window.print();
-  }
+    window.print();
+  };
 
   return (
     <div className="w-full lg:max-h-screen">
+      <Meta title="Resit Transaksi | Bendahari Dashboard" />
       <div className="block space-y-20 lg:space-y-0 lg:w-full lg:px-20 px-10 ">
         <div className="mt-10">
           <p className="text-2xl font-bold text-center">

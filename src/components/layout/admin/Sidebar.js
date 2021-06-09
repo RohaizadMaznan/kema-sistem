@@ -48,7 +48,7 @@ function Sidebar() {
                 </div>
                 <div>
                   <span className="pb-1 md:pb-0 text-sm text-gray-900">
-                    Profile (Administrator)
+                    Profil (Pentadbir)
                   </span>
                 </div>
               </div>
@@ -82,7 +82,7 @@ function Sidebar() {
                   </svg>
                 </div>
                 <div>
-                  <span className="pb-1 md:pb-0 text-sm">Manage User</span>
+                  <span className="pb-1 md:pb-0 text-sm">Mengurus Pengguna</span>
                 </div>
               </div>
             </Link>
@@ -115,7 +115,7 @@ function Sidebar() {
                 </div>
                 <div>
                   <span className="pb-1 md:pb-0 text-sm">
-                    Manage Notifications
+                    Mengurus Notifikasi
                   </span>
                 </div>
               </div>

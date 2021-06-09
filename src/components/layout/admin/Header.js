@@ -68,7 +68,7 @@ export default function Header() {
             className="text-gray-900 no-underline hover:no-underline font-extrabold text-xl"
             to="/admin/dashboard"
           >
-            Admin Dashboard
+            Dashboard Pentadbir
           </Link>
         </div>
         <div className="block lg:hidden pr-4">
@@ -99,7 +99,7 @@ export default function Header() {
                     to="/signin"
                     className="text-gray-900 hover:text-gray-900 px-3 py-2 flex items-center transition duration-150 ease-in-out hover:bg-gray-200 rounded-md"
                   >
-                    Sign in
+                    Log Masuk
                   </Link>
                 </li>
               </>

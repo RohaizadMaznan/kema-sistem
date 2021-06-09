@@ -26,8 +26,9 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed w-full z-10 top-0 bg-white ${!top &&
-        "bg-white blur shadow-lg"}`}
+      className={`fixed w-full z-10 top-0 bg-white ${
+        !top && "bg-white blur shadow-lg"
+      }`}
     >
       <div className="w-full mx-auto container flex flex-wrap items-center justify-between mt-0 py-4">
         <div className="pl-4 flex items-center">
@@ -68,7 +69,7 @@ export default function Header() {
             className="text-gray-900 no-underline hover:no-underline font-extrabold text-xl"
             to="/admin/dashboard"
           >
-            Bendahari Dashboard
+            Dashboard Bendahari
           </Link>
         </div>
         <div className="block lg:hidden pr-4">

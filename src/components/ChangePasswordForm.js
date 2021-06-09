@@ -87,8 +87,8 @@ export default function ChangePasswordForm() {
           onChange={({ target }) => setCurrPass(target.value)}
           inputName="currPass"
           id="currPass"
-          label="Current password"
-          placeholder="Current password"
+          label="Kata Laluan Sediakala"
+          placeholder="Kata Laluan Sediakala"
         />
         <ProfileInput
           inputType="password"
@@ -97,8 +97,8 @@ export default function ChangePasswordForm() {
           onChange={({ target }) => setNewPass(target.value)}
           inputName="newPass"
           id="newPass"
-          label="New password"
-          placeholder="New password"
+          label="Kata Laluan Baru"
+          placeholder="Kata Laluan Baru"
         />
         <ProfileInput
           inputType="password"
@@ -107,15 +107,15 @@ export default function ChangePasswordForm() {
           onChange={({ target }) => setConfirmPass(target.value)}
           inputName="confirmPass"
           id="confirmPass"
-          label="Confirm password"
-          placeholder="Confirm password"
+          label="Sahkan Kata Laluan"
+          placeholder="Sahkan Kata Laluan"
         />
         <div className="mb-2 flex justify-end">
           <button
             type="submit"
             className="btn-sm text-white shadow-lg bg-blue-500 hover:bg-blue-600"
           >
-            <span className="text-sm">Save</span>
+            <span className="text-sm">Simpan</span>
           </button>
         </div>
       </form>

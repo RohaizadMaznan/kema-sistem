@@ -61,7 +61,7 @@ function AddCoupon({history}) {
 
   return (
     <div>
-      <Meta title="Add New Coupon | Bendahari Dashboard" />
+      <Meta title="Tambah Kupon Baharu | Bendahari Dashboard" />
       <div
         className="lg:pl-6 space-y-10 text-gray-900"
         data-aos="fade-up"

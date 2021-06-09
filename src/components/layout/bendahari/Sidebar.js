@@ -48,7 +48,7 @@ function Sidebar() {
                 </div>
                 <div>
                   <span className="pb-1 md:pb-0 text-sm text-gray-900">
-                    Profile (Bendahari)
+                    Profil (Bendahari)
                   </span>
                 </div>
               </div>
@@ -82,7 +82,7 @@ function Sidebar() {
                 </div>
                 <div>
                   <span className="pb-1 md:pb-0 text-sm">
-                    Coupons
+                    Senarai Kupon
                   </span>
                 </div>
               </div>
@@ -116,7 +116,7 @@ function Sidebar() {
                 </div>
                 <div>
                   <span className="pb-1 md:pb-0 text-sm">
-                    Manage Transactions
+                    Mengurus Transaksi
                   </span>
                 </div>
               </div>

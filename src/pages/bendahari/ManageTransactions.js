@@ -37,24 +37,24 @@ export default function Index() {
 
   return (
     <div>
-      <Meta title="Manage Transactions | Bendahari Dashboard" />
+      <Meta title="Senarai Transaksi | Bendahari Dashboard" />
       <div
         className="lg:pl-6 space-y-10 text-gray-900"
         data-aos="fade-up"
         data-aos-delay="150"
       >
         <div>
-          <p className="text-2xl">Transactions</p>
+          <p className="text-2xl">Senarai Transaksi</p>
           <hr className="my-5" />
           <div>
             <table className="table-auto border-collapse w-full">
               <thead>
                 <tr className="rounded-lg bg-gray-200 text-sm font-medium text-gray-700">
-                  <th className="w-1/12 px-4 py-2 text-left">Sender</th>
-                  <th className="w-1/12 px-4 py-2 text-left">Receiver</th>
-                  <th className="w-2/12 px-4 py-2 text-left">Description</th>
+                  <th className="w-1/12 px-4 py-2 text-left">Penghantar</th>
+                  <th className="w-1/12 px-4 py-2 text-left">Penerima</th>
+                  <th className="w-2/12 px-4 py-2 text-left">Deskripsi</th>
                   <th className="w-2/12 px-4 py-2 text-left">
-                    Transaction Value
+                    Kadar Transaksi
                   </th>
                   <th className="w-3/12 px-4 py-2 text-left"></th>
                   <th className="w-1/12 px-4 py-2 "></th>

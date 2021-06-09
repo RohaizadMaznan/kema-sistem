@@ -78,7 +78,7 @@ function UpdateNotification({ history }) {
 
   return (
     <div>
-      <Meta title="Add New Coupon | Bendahari Dashboard" />
+      <Meta title="Kemaskini Notifikasi | Admin Dashboard" />
       <div
         className="lg:pl-6 space-y-10 text-gray-900"
         data-aos="fade-up"

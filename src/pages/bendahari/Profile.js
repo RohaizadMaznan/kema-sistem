@@ -89,7 +89,7 @@ class Profile extends Component {
   render() {
     return (
       <>
-      <Meta title="My Profile | KitaShare Web Application and OCR" />
+      <Meta title="Profil Pengguna | Bendahari Dashboard" />
         <div className="flex justify-items-start">
           <div
             className="w-full p-5 mt-6 lg:mt-0 text-gray-900 leading-normal rounded-md"
@@ -106,7 +106,7 @@ class Profile extends Component {
               </div>
             </div> */}
 
-            <p className="text-xl">My Profile</p>
+            <p className="text-xl">Profil Saya</p>
             <hr className="my-5" />
 
             <div>
@@ -117,8 +117,8 @@ class Profile extends Component {
                   onChange={this.onChange}
                   inputName="firstName"
                   id="firstName"
-                  label="First name"
-                  placeholder="Rohaizad"
+                  label="Nama Pertama"
+                  placeholder="Nama Pertama"
                 />
                 <ProfileInput
                   inputType="text"
@@ -126,8 +126,8 @@ class Profile extends Component {
                   onChange={this.onChange}
                   inputName="lastName"
                   id="lastName"
-                  label="Last name"
-                  placeholder="Maznan"
+                  label="Name Keluarga"
+                  placeholder="Name Keluarga"
                 />
                 <ProfileInput
                   inputType="text"
@@ -135,8 +135,8 @@ class Profile extends Component {
                   onChange={this.onChange}
                   inputName="email"
                   id="email"
-                  label="E-mail address (disabled)"
-                  placeholder="rohaizadmaznan@gmail.com"
+                  label="Alamat Emel (disabled)"
+                  placeholder="example@gmail.com"
                   disable="true"
                 />
                 

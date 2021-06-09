@@ -38,7 +38,7 @@ export default function ManageNotifications() {
 
   return (
     <div>
-      <Meta title="Manage Transactions | Bendahari Dashboard" />
+      <Meta title="Senarai Notifikasi Sistem | Admin Dashboard" />
       <div
         className="lg:pl-6 space-y-10 text-gray-900"
         data-aos="fade-up"
@@ -81,8 +81,8 @@ export default function ManageNotifications() {
             <table className="table-auto border-collapse w-full">
               <thead>
                 <tr className="rounded-lg bg-gray-200 text-sm font-medium text-gray-700">
-                  <th className="w-2/12 px-4 py-2 text-left">Title</th>
-                  <th className="w-10/12 px-4 py-2 text-left">Body</th>
+                  <th className="w-2/12 px-4 py-2 text-left">Tajuk</th>
+                  <th className="w-10/12 px-4 py-2 text-left">Deskripsi Notifikasi</th>
                   <th className="w-1/12 px-4 py-2 "></th>
                 </tr>
               </thead>

@@ -99,7 +99,7 @@ function UpdateCoupon({ history }) {
 
   return (
     <div>
-      <Meta title="Add New Coupon | Bendahari Dashboard" />
+      <Meta title="Kemaskini Kupon | Bendahari Dashboard" />
       <div
         className="lg:pl-6 space-y-10 text-gray-900"
         data-aos="fade-up"
