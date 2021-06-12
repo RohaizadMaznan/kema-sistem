@@ -120,7 +120,7 @@ function UpdateTransaction({ history }) {
               <ProfileInput
                 inputType="text"
                 inputName="sender"
-                label="Sender (disabled)"
+                label="Penghantar (disabled)"
                 value={states.sender}
                 onChange={handleInputChange}
                 disable="true"
@@ -128,7 +128,7 @@ function UpdateTransaction({ history }) {
               <ProfileInput
                 inputType="text"
                 inputName="receiver"
-                label="Receiver (disabled)"
+                label="Penerima (disabled)"
                 value={states.receiver}
                 onChange={handleInputChange}
                 disable="true"
@@ -136,14 +136,14 @@ function UpdateTransaction({ history }) {
               <ProfileInput
                 inputType="text"
                 inputName="description"
-                label="Transaction description"
+                label="Maklumat Transaksi"
                 value={states.description}
                 onChange={handleInputChange}
               />
               <ProfileInput
                 inputType="number"
                 inputName="transactionValue"
-                label="Transaction Value (RM)"
+                label="Nilai Transaksi (RM)"
                 value={states.transactionValue}
                 onChange={handleInputChange}
               />
