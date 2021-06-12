@@ -67,7 +67,7 @@ export default function Header() {
           </div>
           <Link
             className="text-gray-900 no-underline hover:no-underline font-extrabold text-xl"
-            to="/admin/dashboard"
+            to="/bendahari/coupon"
           >
             Dashboard Bendahari
           </Link>
