@@ -30,6 +30,9 @@ import DownloadTransaction from "./pages/bendahari/DownloadTransaction";
 import GuestLayout from "./components/layout/guest/layout";
 import AdminLayout from "./components/layout/admin/layout";
 import BendahariLayout from "./components/layout/bendahari/layout";
+import ManageReports from "./pages/admin/ManageReports";
+import AddReport from "./pages/admin/AddReport";
+import UpdateReports from "./pages/admin/UpdateReports";
 
 const AppRoute = ({ component: Component, layout: Layout, ...rest }) => (
   <Route
@@ -75,6 +78,9 @@ function App() {
             <AppRoute exact path="/admin/manage-notifications" layout={AdminLayout} component={ManageNotifications} />
             <AppRoute exact path="/admin/manage-notifications/update/:id" layout={AdminLayout} component={UpdateNotification} />
             <AppRoute exact path="/admin/manage-notifications/new" layout={AdminLayout} component={AddNotification} />
+            <AppRoute exact path="/admin/manage-reports" layout={AdminLayout} component={ManageReports} />
+            <AppRoute exact path="/admin/manage-reports/new" layout={AdminLayout} component={AddReport} />
+            <AppRoute exact path="/admin/manage-reports/update/:id" layout={AdminLayout} component={UpdateReports} />
 
             <AppRoute exact path="/bendahari/coupon" layout={BendahariLayout} component={ManageCoupon} />
             <AppRoute exact path="/bendahari/profile" layout={BendahariLayout} component={BendahariProfile} />

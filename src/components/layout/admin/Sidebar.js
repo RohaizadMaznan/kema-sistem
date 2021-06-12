@@ -82,7 +82,41 @@ function Sidebar() {
                   </svg>
                 </div>
                 <div>
-                  <span className="pb-1 md:pb-0 text-sm">Mengurus Pengguna</span>
+                  <span className="pb-1 md:pb-0 text-sm">
+                    Mengurus Pengguna
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </li>
+          <li className="py-2 md:my-0 hover:bg-blue-100 lg:hover:bg-transparent">
+            <Link
+              to="/admin/manage-reports"
+              className={`block px-5 py-2 align-middle text-gray-900 no-underline hover:bg-blue-100 hover:text-blue-500 rounded-md ${
+                currentRoute.includes("/admin/manage-reports")
+                  ? "bg-blue-100 text-blue-700"
+                  : " "
+              }`}
+            >
+              <div className="flex justify-start">
+                <div className="mr-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 mt-1 text-blue-700"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <span className="pb-1 md:pb-0 text-sm">Mengurus Laporan</span>
                 </div>
               </div>
             </Link>
