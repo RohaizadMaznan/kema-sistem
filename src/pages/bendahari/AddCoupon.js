@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { withRouter } from "react-router-dom";
-import { Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 import { useToasts } from "react-toast-notifications";
 import fire from "../../auth/fbAuth";
 import ProfileInput from "../../components/ProfileInput";
@@ -12,7 +12,7 @@ function AddCoupon({history}) {
   const [value, setValue] = useState("");
   const [exDesc, setExDesc] = useState();
   const [userId, setUserId] = useState();
-  const [name, setName] = useState();
+  // const [name, setName] = useState();
   const { addToast } = useToasts();
 
   fire.auth().onAuthStateChanged((user) => {

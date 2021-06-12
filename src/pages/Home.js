@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import fire from "../auth/fbAuth";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { useToasts } from "react-toast-notifications";
 import Meta from "../components/Meta";
 

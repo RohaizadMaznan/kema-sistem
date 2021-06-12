@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { withRouter } from "react-router-dom";
-import { Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 import { useToasts } from "react-toast-notifications";
 import fire from "../../auth/fbAuth";
 import ProfileInput from "../../components/ProfileInput";

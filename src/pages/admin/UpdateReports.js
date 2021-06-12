@@ -13,7 +13,7 @@ const initialValues = {
 
 function UpdateReports({ history }) {
   const { id } = useParams();
-  console.log(id);
+  // console.log(id);
   const { addToast } = useToasts();
 
   const [states, setStates] = useState(initialValues);

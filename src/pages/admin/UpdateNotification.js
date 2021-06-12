@@ -12,7 +12,7 @@ const initialValues = {
 
 function UpdateNotification({ history }) {
   const { id } = useParams();
-  console.log(id);
+  // console.log(id);
   const { addToast } = useToasts();
 
   const [states, setStates] = useState(initialValues);
@@ -78,7 +78,7 @@ function UpdateNotification({ history }) {
 
   return (
     <div>
-      <Meta title="Kemaskini Notifikasi | Admin Dashboard" />
+      <Meta title="Kemaskini Laporan | Admin Dashboard" />
       <div
         className="lg:pl-6 space-y-10 text-gray-900"
         data-aos="fade-up"

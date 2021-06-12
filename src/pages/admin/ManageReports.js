@@ -4,23 +4,10 @@ import { Link } from "react-router-dom";
 // import { Redirect } from "react-router-dom";
 import ReportTable from "../../components/admin/ReportTable";
 import Meta from "../../components/Meta";
-import moment from "moment";
+// import moment from "moment";
 
 export default function ManageReports() {
   const [reports, setReports] = useState([]);
-  const [userId, setUserId] = useState();
-
-  fire.auth().onAuthStateChanged((user) => {
-    if (user) {
-      // Get document users from firestore based on user.uid
-      fire.firestore().collection("User").doc(user.uid).get();
-
-      setUserId(user.uid);
-      // console.log(user.uid);
-    } else {
-      console.log("no auth found");
-    }
-  });
 
   useEffect(() => {
     const fetchData = async () => {
@@ -51,7 +38,7 @@ export default function ManageReports() {
             </div>
             <div className="mr-10">
               <Link
-                to="/admin/manage-notifications/new"
+                to="/admin/manage-reports/new"
                 className="btn-sm text-sm text-white shadow-lg bg-blue-500 hover:bg-blue-600 my-3 md:my-0 md:ml-3"
               >
                 <span>

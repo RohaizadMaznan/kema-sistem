@@ -13,7 +13,7 @@ const initialValues = {
 
 function UpdateUser({ history }) {
   const { id } = useParams();
-  console.log(id);
+  // console.log(id);
 
   //   const [coupons, setCoupons] = useState("");
   //   const [code, setCode] = useState("");

@@ -6,18 +6,6 @@ import ManageUsersTable from "../../components/admin/UsersTable";
 
 export default function MyUpload() {
   const [users, setUsers] = useState([]);
-  const [userId, setUserId] = useState();
-
-  fire.auth().onAuthStateChanged((user) => {
-    if (user) {
-      // Get document users from firestore based on user.uid
-      fire.firestore().collection("User").doc(user.uid).get();
-
-      setUserId(user.uid);
-    } else {
-      console.log("no auth found");
-    }
-  });
 
   useEffect(() => {
     const fetchData = async () => {

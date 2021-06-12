@@ -6,19 +6,19 @@ import Meta from "../../components/Meta";
 
 export default function Index() {
   const [coupons, setCoupons] = useState([]);
-  const [userId, setUserId] = useState();
+  // const [userId, setUserId] = useState();
 
-  fire.auth().onAuthStateChanged((user) => {
-    if (user) {
-      // Get document users from firestore based on user.uid
-      fire.firestore().collection("User").doc(user.uid).get();
+  // fire.auth().onAuthStateChanged((user) => {
+  //   if (user) {
+  //     // Get document users from firestore based on user.uid
+  //     fire.firestore().collection("User").doc(user.uid).get();
 
-      setUserId(user.uid);
-      // console.log(user.uid);
-    } else {
-      console.log("no auth found");
-    }
-  });
+  //     setUserId(user.uid);
+  //     // console.log(user.uid);
+  //   } else {
+  //     console.log("no auth found");
+  //   }
+  // });
 
   useEffect(() => {
     const fetchData = async () => {
