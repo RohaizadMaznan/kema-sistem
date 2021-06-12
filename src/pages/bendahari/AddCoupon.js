@@ -80,7 +80,7 @@ function AddCoupon({history}) {
                 inputType="text"
                 inputName="couponCode"
                 id="couponCode"
-                label="Coupon Code"
+                label="Kod Kupon"
                 value={code}
                 onChange={({ target }) => setCode(target.value)}
               />
@@ -88,7 +88,7 @@ function AddCoupon({history}) {
                 inputType="number"
                 inputName="couponLimit"
                 id="couponLimit"
-                label="Coupon Limitations"
+                label="Had Pengeluaran Kupon"
                 value={limit}
                 onChange={({ target }) => setLimit(target.value)}
               />
@@ -96,7 +96,7 @@ function AddCoupon({history}) {
                 inputType="number"
                 inputName="couponValue"
                 id="couponValue"
-                label="Coupon Value (RM)"
+                label="Jumlah Nilai Kupon (RM)"
                 value={value}
                 onChange={({ target }) => setValue(target.value)}
               />
@@ -104,7 +104,7 @@ function AddCoupon({history}) {
                 inputType="text"
                 inputName="desc"
                 id="desc"
-                label="Description coupon (optional)"
+                label="Penambahan Maklumat Kupon (Pilihan)"
                 value={exDesc}
                 onChange={({ target }) => setExDesc(target.value)}
               />

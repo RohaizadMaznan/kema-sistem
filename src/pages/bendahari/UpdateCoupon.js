@@ -117,28 +117,28 @@ function UpdateCoupon({ history }) {
               <ProfileInput
                 inputType="text"
                 inputName="code"
-                label="Coupon Code"
+                label="Kod Kupon"
                 value={states.code}
                 onChange={handleInputChange}
               />
               <ProfileInput
                 inputType="number"
                 inputName="limit"
-                label="Coupon Limitations"
+                label="Had Pengeluaran Kupon"
                 value={states.limit}
                 onChange={handleInputChange}
               />
               <ProfileInput
                 inputType="number"
                 inputName="value"
-                label="Coupon Value (RM)"
+                label="Jumlah Nilai Kupon (RM)"
                 value={states.value}
                 onChange={handleInputChange}
               />
               <ProfileInput
                 inputType="text"
                 inputName="exDesc"
-                label="Description coupon (optional)"
+                label="Penambahan Maklumat Kupon (Pilihan)"
                 value={states.exDesc}
                 onChange={handleInputChange}
               />
