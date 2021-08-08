@@ -10,7 +10,7 @@ function SignIn({ history }) {
   // Input field for sign in
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  
+
   // const [remember, setRemember] = useState("");
 
   // Show password write
@@ -21,7 +21,7 @@ function SignIn({ history }) {
     e.preventDefault();
 
     if (password === "" || email === "") {
-      const message = "Cannot leave empty to sign in!";
+      const message = "Tidak boleh dibiarkan kosong!";
       addToast(message, {
         appearance: "warning",
         autoDismiss: true,
@@ -41,19 +41,19 @@ function SignIn({ history }) {
           .then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
               if (doc.data().email === "admin@gmail.com") {
-                addToast("Welcome back, Admin!", {
+                addToast("Selamat datang, Pentadbir!", {
                   appearance: "success",
                   autoDismiss: true,
                 });
                 history.push("/admin/manage-users");
               } else if (doc.data().email === "bendahari@gmail.com") {
-                addToast("Hi, welcome back, Bendahari!", {
+                addToast("Selamat datang, Bendahari!", {
                   appearance: "success",
                   autoDismiss: true,
                 });
                 history.push("/bendahari/coupon");
               } else {
-                addToast("Details of the account is not authorized to login.", {
+                addToast("Maklumat pengguna tidak mempunyai akses.", {
                   appearance: "error",
                   autoDismiss: true,
                 });
@@ -61,7 +61,7 @@ function SignIn({ history }) {
               }
             });
           });
-        console.log("Successfully login");
+        console.log("Berjaya Log masuk");
         //router.push("/")
       })
       .catch((err) => {
@@ -74,13 +74,13 @@ function SignIn({ history }) {
 
   return (
     <section className="bg-gradient-to-b from-gray-100 to-white">
-    <Meta title="Sign in" />
+    <Meta title="KEMA" />
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Page header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h1 className="h1" data-aos="zoom-y-out">
-              Log Masuk.
+              KEMA.
             </h1>
           </div>
 
@@ -183,7 +183,7 @@ function SignIn({ history }) {
                     <label className="flex items-center">
                       <input type="checkbox" className="form-checkbox" />
                       <span className="text-gray-600 ml-2">
-                        Keep me signed in
+                        Kekalkan dalam Sistem
                       </span>
                     </label>
                   </div>
@@ -207,7 +207,7 @@ function SignIn({ history }) {
                     onClick={handleLogin}
                     type="submit"
                   >
-                    Sign in
+                    Log masuk
                   </button>
                 </div>
               </div>

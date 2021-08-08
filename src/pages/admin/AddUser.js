@@ -21,7 +21,7 @@ function AddUser({ history }) {
     const noImg = "no-img.png";
 
     if (password !== passConf) {
-      const message = "Password and password confirmation does not match";
+      const message = "Kata laluan tidak sama";
       addToast(message, {
         appearance: "warning",
         autoDismiss: true,
@@ -33,7 +33,7 @@ function AddUser({ history }) {
       .auth()
       .createUserWithEmailAndPassword(email, password)
       .then((user) => {
-        addToast("Successfully register", {
+        addToast("Berjaya Didaftar", {
           appearance: "success",
           autoDismiss: true,
         });
@@ -45,7 +45,7 @@ function AddUser({ history }) {
             authProvider: "email",
             firstName: firstName,
             lastName: lastName,
-            name: firstName + " " + lastName, 
+            name: firstName + " " + lastName,
             email: email,
             type: type,
             userProfilePicture: `https://firebasestorage.googleapis.com/v0/b/kitashare-1653e.appspot.com/o/${noImg}?alt=media`,
@@ -135,7 +135,7 @@ function AddUser({ history }) {
               <ProfileInput
                 inputType="password"
                 id="password"
-                label="Password"
+                label="Kata Laluan"
                 value={password}
                 aria-describedby="password-helper-text"
                 onChange={({ target }) => setPassword(target.value)}
@@ -143,7 +143,7 @@ function AddUser({ history }) {
               <ProfileInput
                 inputType="password"
                 id="passConf"
-                label="Confirm Password"
+                label="Sahkan Kata laluan"
                 value={passConf}
                 aria-describedby="passConf-helper-text"
                 onChange={({ target }) => setPassConf(target.value)}

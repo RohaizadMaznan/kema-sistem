@@ -24,8 +24,8 @@ export default function CouponTable({
         onHide: true,
       })
       .then(() => {
-        console.log(`The coupon is set to private ${transId}`);
-        const message = `${id} is now hiding anonymously.`;
+        console.log(`kupon disembunyi ${transId}`);
+        const message = `${id} kupon disembunyi.`;
         addToast(message, {
           appearance: "success",
           autoDismiss: true,
@@ -49,8 +49,8 @@ export default function CouponTable({
         onHide: false,
       })
       .then(() => {
-        console.log(`The coupon is showing to public. ${transId}`);
-        const message = `${id} is now showing to public.`;
+        console.log(`Kupon ditayangkan. ${transId}`);
+        const message = `${id} Kupon ditayangkan.`;
         addToast(message, {
           appearance: "success",
           autoDismiss: true,
@@ -70,7 +70,7 @@ export default function CouponTable({
     if (window.confirm(`Delete : ID - [${transId}]?`)) {
       const db = fire.firestore();
       db.collection("Transaction").doc(transId).delete();
-      const message = `${transId} transaction removed.`;
+      const message = `${transId} Transaksi dipadamkan.`;
       addToast(message, {
         appearance: "success",
         autoDismiss: true,

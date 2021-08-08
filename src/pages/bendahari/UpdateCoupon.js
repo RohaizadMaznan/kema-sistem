@@ -76,16 +76,16 @@ function UpdateCoupon({ history }) {
       .doc(id)
       .update({
         couponCode: states.code,
-        couponLimit: states.limit,
-        couponValue: states.value,
-        description: `This coupon limits to ${states.limit} redemptions and worth RM${states.value}`,
+        couponLimit: parseInt(states.limit),
+        couponValue: parseInt(states.value),
+        description: `Had pengeluaran kupon ${states.limit} dan bernilai RM${states.value}`,
         extraDescription: states.exDesc,
         createdAt: new Date().toISOString(),
       })
       .then(() => {
         // console.log("Success post")
         // window.location.reload(true)
-        addToast("Coupon has successfully updated in the database!", {
+        addToast("Kupon Berjaya Dikemaskini!", {
           appearance: "success",
           autoDismiss: true,
         });

@@ -22,7 +22,7 @@ export default function ChangePasswordForm() {
     e.preventDefault();
 
     if (newPass !== confirmPass) {
-      const message = "Password and password confirmation does not match";
+      const message = "Kata Laluan tidak sama";
       addToast(message, {
         appearance: "warning",
         autoDismiss: true,
@@ -37,12 +37,12 @@ export default function ChangePasswordForm() {
 
     Promise.all(promises)
       .then(() => {
-        const message = "Password have been updated!";
+        const message = "Kata Laluan telah dikemaskini!";
         addToast(message, {
           appearance: "success",
           autoDismiss: true,
         });
-        console.log("Successfully change new password!")
+        console.log("Berjaya!")
       })
       .catch((err) => {
         const message = err.message;

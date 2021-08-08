@@ -72,7 +72,7 @@ class Profile extends Component {
         });
         console.log("success update");
         window.location.reload();
-        alert("Profile updated!");
+        alert("Profil Dikemaskini!");
         // this.props.history.push("/show/" + this.props.match.params.id);
       })
       .catch((error) => {
@@ -139,13 +139,13 @@ class Profile extends Component {
                   placeholder="example@gmail.com"
                   disable="true"
                 />
-                
+
                 <div className="mb-2 flex justify-end">
                   <button
                     type="submit"
                     className="btn-sm text-white shadow-lg bg-blue-500 hover:bg-blue-600"
                   >
-                    <span className="text-sm">Save</span>
+                    <span className="text-sm">Simpan</span>
                   </button>
                 </div>
               </form>

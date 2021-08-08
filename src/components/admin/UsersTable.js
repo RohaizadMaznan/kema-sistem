@@ -17,8 +17,8 @@ export default function UsersTable({ fileShowHide, id, email, role, fullname }) 
         onHide: true,
       })
       .then(() => {
-        console.log(`The coupon is set to private ${userId}`);
-        const message = `${email} is now hiding anonymously.`;
+        console.log(`Pengguna disembunyi ${userId}`);
+        const message = `${email} Pengguna disembunyi.`;
         addToast(message, {
           appearance: "success",
           autoDismiss: true,
@@ -42,8 +42,8 @@ export default function UsersTable({ fileShowHide, id, email, role, fullname }) 
         onHide: false,
       })
       .then(() => {
-        console.log(`The coupon is showing to public. ${userId}`);
-        const message = `${email} is now showing to public.`;
+        console.log(`Pengguna ditayangkan. ${userId}`);
+        const message = `${email} Pengguna ditayangkan.`;
         addToast(message, {
           appearance: "success",
           autoDismiss: true,
@@ -95,7 +95,7 @@ export default function UsersTable({ fileShowHide, id, email, role, fullname }) 
               <span
                 onClick={fileShow}
                 className="hover:text-blue-600 hover:underline cursor-pointer"
-                title="Activate"
+                title="Aktifkan"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ export default function UsersTable({ fileShowHide, id, email, role, fullname }) 
 
               <span
                 className="hover:text-red-600 hover:underline cursor-pointer mx-1"
-                title="Permanently delete"
+                title="Padam"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +134,7 @@ export default function UsersTable({ fileShowHide, id, email, role, fullname }) 
             <span
               onClick={fileAnonymous}
               className="hover:text-blue-600 hover:underline cursor-pointer"
-              title="Deactivate"
+              title="Diaktifkan"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -35,8 +35,8 @@ export default function CouponTable({
         onHide: true,
       })
       .then(() => {
-        console.log(`The coupon is set to private ${couponId}`);
-        const message = `${code} is now hiding anonymously.`;
+        console.log(`Kupon disembunyi ${couponId}`);
+        const message = `${code} Kupon disembunyi.`;
         addToast(message, {
           appearance: "success",
           autoDismiss: true,
@@ -60,8 +60,8 @@ export default function CouponTable({
         onHide: false,
       })
       .then(() => {
-        console.log(`The coupon is showing to public. ${couponId}`);
-        const message = `${code} is now showing to public.`;
+        console.log(`Kupon ditayangkan. ${couponId}`);
+        const message = `${code} Kupon ditayangkan.`;
         addToast(message, {
           appearance: "success",
           autoDismiss: true,
@@ -77,11 +77,11 @@ export default function CouponTable({
   };
 
   const onDelete = () => {
-    if (window.confirm("Are you sure you want to delete this?")) {
+    if (window.confirm("Anda pasti mahu padamakan kod kupon ini?")) {
       const couponId = id;
       const db = fire.firestore();
       db.collection("Coupon").doc(couponId).delete();
-      const message = `${code} coupon removed.`;
+      const message = `${code} kupon dipadamkan.`;
       addToast(message, {
         appearance: "success",
         autoDismiss: true,

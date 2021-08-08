@@ -37,17 +37,17 @@ function AddCoupon({history}) {
         userId: userId,
         uploader: "bendahari",
         couponCode: code,
-        couponLimit: limit,
-        couponValue: value,
-        description: `This coupon limits to ${limit} redemptions and worth RM${value}`,
-        extraDescription: exDesc,
+        couponLimit: parseInt(limit),
+        couponValue: parseInt(value),
+        description: `Had pengeluaran kupon ${limit} dan bernilai RM${value}`,
+        extraDescription:" " + exDesc,
         createdAt: new Date().toISOString(),
         onHide: false,
       })
       .then(() => {
         // console.log("Success post")
         // window.location.reload(true)
-        addToast("Coupon has successfully inserted in the database!", {
+        addToast("Kupon Berjaya Dicipta!", {
           appearance: "success",
           autoDismiss: true,
         });
@@ -55,7 +55,7 @@ function AddCoupon({history}) {
       })
       .catch((err) => {
         const message = err.message;
-        addToast(message, { appearance: "error", autoDismiss: true });
+        addToast(message, { appearance: "Tidak sah", autoDismiss: true });
       });
   };
 

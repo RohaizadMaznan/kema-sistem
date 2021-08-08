@@ -8,10 +8,10 @@ export default function CouponTable({ title, body, id }) {
 
   const onDelete = () => {
     const notiId = id;
-    if (window.confirm(`Delete : ${title} - [${notiId}]?`)) {
+    if (window.confirm(`Padam : ${title} - [${notiId}]?`)) {
       const db = fire.firestore();
       db.collection("notiificationHistory").doc(notiId).delete();
-      const message = `${title} notification removed.`;
+      const message = `${title} Notifikasi dipadamkan.`;
       addToast(message, {
         appearance: "success",
         autoDismiss: true,
@@ -48,7 +48,7 @@ export default function CouponTable({ title, body, id }) {
           </span>
           <span
             className="hover:text-red-600 hover:underline cursor-pointer mx-1"
-            title="Permanently delete"
+            title="Padam"
             onClick={onDelete}
           >
             <svg

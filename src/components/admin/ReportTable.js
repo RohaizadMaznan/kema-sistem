@@ -22,8 +22,8 @@ export default function ReportTable({
         onHide: true,
       })
       .then(() => {
-        console.log(`The coupon is set to private ${reportId}`);
-        const message = `${reportId} is now hiding anonymously.`;
+        console.log(`Laporan disembunyi ${reportId}`);
+        const message = `${reportId} Laporan disembunyi.`;
         addToast(message, {
           appearance: "success",
           autoDismiss: true,
@@ -47,8 +47,8 @@ export default function ReportTable({
         onHide: false,
       })
       .then(() => {
-        console.log(`The coupon is showing to public. ${reportId}`);
-        const message = `${reportId} is now showing to public.`;
+        console.log(`Laporan ditayangkan. ${reportId}`);
+        const message = `${reportId} Laporan ditayangkan.`;
         addToast(message, {
           appearance: "success",
           autoDismiss: true,
@@ -65,10 +65,10 @@ export default function ReportTable({
 
   const onDelete = () => {
     const reportId = id;
-    if (window.confirm(`Delete : ${report} - [${reportId}]?`)) {
+    if (window.confirm(`Padam : ${report} - [${reportId}]?`)) {
       const db = fire.firestore();
       db.collection("Report").doc(reportId).delete();
-      const message = `${report} report removed.`;
+      const message = `${report} Laporan dipadam.`;
       addToast(message, {
         appearance: "success",
         autoDismiss: true,
@@ -114,7 +114,7 @@ export default function ReportTable({
               <span
                 onClick={fileShow}
                 className="hover:text-blue-600 hover:underline cursor-pointer"
-                title="Show"
+                title="lihat"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +133,7 @@ export default function ReportTable({
 
               <span
                 className="hover:text-red-600 hover:underline cursor-pointer mx-1"
-                title="Permanently delete"
+                title="Padam"
                 onClick={onDelete}
               >
                 <svg
@@ -154,7 +154,7 @@ export default function ReportTable({
             <span
               onClick={fileAnonymous}
               className="hover:text-blue-600 hover:underline cursor-pointer"
-              title="Hide"
+              title="Sembunyi"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
